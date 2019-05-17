@@ -79,6 +79,7 @@ public class BuyActivity extends AppCompatActivity implements ContractInter.BuyI
         intent.putExtra("name", name);
         intent.putExtra("address", address);
         startActivity(intent);
+        overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
     }
     //关注影院
     public void Fllow( int id) {
@@ -98,6 +99,5 @@ public class BuyActivity extends AppCompatActivity implements ContractInter.BuyI
     @Override
     public void MyCancleFllowCinema(String str) {
         Toast.makeText(BuyActivity.this,str,Toast.LENGTH_SHORT).show();
-
     }
 }

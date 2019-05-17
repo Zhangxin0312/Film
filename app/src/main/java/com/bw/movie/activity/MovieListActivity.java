@@ -109,5 +109,6 @@ public class MovieListActivity extends AppCompatActivity implements  ContractInt
         intent.putExtra("price",price);
         intent.putExtra("id",id);
         startActivity(intent);
+        overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
     }
 }

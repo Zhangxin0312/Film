@@ -8,7 +8,7 @@
     <RelativeLayout
         android:background="@mipmap/myback"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/dp_240">
+        android:layout_height="@dimen/dp_200">
 
         <ImageView
             android:layout_marginTop="@dimen/dp_10"
@@ -20,7 +20,7 @@
             fresco:roundAsCircle="true"
             android:layout_width="@dimen/dp_80"
             android:layout_height="@dimen/dp_80"
-            android:layout_marginTop="@dimen/dp_50"
+            android:layout_marginTop="@dimen/dp_30"
             android:layout_marginLeft="@dimen/dp_150"
             android:id="@+id/my_tou"/>
         <TextView
@@ -55,41 +55,44 @@
         <LinearLayout
             android:layout_marginLeft="@dimen/dp_20"
             android:layout_marginRight="@dimen/dp_20"
+            android:background="@drawable/hui"
+            android:id="@+id/my_user_info"
             android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_width="@dimen/dp_40"
+                android:layout_height="@dimen/dp_40"
+                android:src="@mipmap/my_icon_messiage_default_hdpi"/>
+            <TextView
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="我的信息"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
             android:background="@drawable/hui"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-            <LinearLayout
-                android:id="@+id/my_user_info"
-                android:layout_marginRight="@dimen/dp_20"
-                android:layout_marginTop="@dimen/dp_20"
-                android:layout_marginBottom="@dimen/dp_20"
-                android:layout_width="@dimen/dp_0"
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                   <ImageView
-                       android:layout_marginLeft="@dimen/dp_30"
-                       android:layout_width="@dimen/dp_40"
-                       android:layout_height="@dimen/dp_40"
-                       android:src="@mipmap/my_icon_messiage_default_hdpi"/>
-                <TextView
-                    android:layout_marginLeft="@dimen/dp_20"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textSize="@dimen/sp_16"
-                    android:textStyle="bold"
-                    android:layout_marginTop="@dimen/dp_10"
-                    android:text="我的信息"/>
-            </LinearLayout>
+
             <LinearLayout
                 android:id="@+id/page_id"
                 android:layout_marginRight="@dimen/dp_20"
-                android:layout_marginTop="@dimen/dp_20"
-                android:layout_marginBottom="@dimen/dp_20"
-                android:layout_width="@dimen/dp_0"
-                android:layout_weight="1"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:layout_width="@dimen/dp_110"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
@@ -109,19 +112,18 @@
             <LinearLayout
                 android:id="@+id/recordList_id"
                 android:layout_marginRight="@dimen/dp_20"
-                android:layout_marginTop="@dimen/dp_20"
-                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
                 android:layout_width="@dimen/dp_0"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <ImageView
-                    android:layout_marginLeft="@dimen/dp_30"
+                    android:layout_marginLeft="@dimen/dp_10"
                     android:layout_width="@dimen/dp_40"
                     android:layout_height="@dimen/dp_40"
                     android:src="@mipmap/my_icon_remind_default_hdpi"/>
                 <TextView
-                    android:layout_marginLeft="@dimen/dp_20"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="@dimen/sp_16"
@@ -131,17 +133,17 @@
             </LinearLayout>
     </LinearLayout>
         <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
             android:background="@drawable/hui"
             android:layout_marginLeft="@dimen/dp_20"
             android:layout_marginRight="@dimen/dp_20"
-            android:layout_marginTop="@dimen/dp_20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
             <LinearLayout
                 android:id="@+id/feed_back_id"
                 android:layout_marginRight="@dimen/dp_20"
-                android:layout_marginTop="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
                 android:layout_marginBottom="@dimen/dp_20"
                 android:layout_width="@dimen/dp_0"
                 android:layout_weight="1"
@@ -163,8 +165,8 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_marginRight="@dimen/dp_20"
-                android:layout_marginTop="@dimen/dp_20"
-                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
                 android:layout_width="@dimen/dp_0"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -185,8 +187,8 @@
             </LinearLayout>
             <LinearLayout
                 android:layout_marginRight="@dimen/dp_20"
-                android:layout_marginTop="@dimen/dp_20"
-                android:layout_marginBottom="@dimen/dp_20"
+                android:layout_marginTop="@dimen/dp_10"
+                android:layout_marginBottom="@dimen/dp_10"
                 android:layout_width="@dimen/dp_0"
                 android:layout_weight="1"
                 android:layout_height="wrap_content"
@@ -213,6 +215,6 @@
         android:textSize="@dimen/sp_16"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginTop="@dimen/dp_80"
+        android:layout_marginTop="@dimen/dp_50"
         android:text="\@八维移动通信学院毕业作品"/>
 </LinearLayout>

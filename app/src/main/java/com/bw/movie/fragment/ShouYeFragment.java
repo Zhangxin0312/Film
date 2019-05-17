@@ -94,8 +94,6 @@ public class ShouYeFragment extends Fragment implements ContractInter.ShouInter 
         //即将热映
         showOnAdapter = new ShowOnAdapter(getActivity(),plist,this);
         RecyclerView_3.setAdapter(showOnAdapter);
-
-
         return view;
     }
 
@@ -125,5 +123,6 @@ public class ShouYeFragment extends Fragment implements ContractInter.ShouInter 
         Intent intent=new Intent(getActivity(),XiangActivity.class);
         startActivity(intent);
         getActivity().finish();
+        getActivity().overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
     }
 }

@@ -154,7 +154,12 @@ public class LoginActivity extends AppCompatActivity implements ContractInterfac
                     edit.putString("pwd", null);
                     edit.commit();
                 }
-                presenterInterface.toLogin(loginPhone, miPwd);
+                if(Utils.isFastClick()){
+                    //to do sth
+                    presenterInterface.toLogin(loginPhone, miPwd);
+                }
+
+
             }
     });
 }
@@ -179,6 +184,7 @@ public class LoginActivity extends AppCompatActivity implements ContractInterfac
             Intent intent = new Intent(LoginActivity.this, ShowActivity.class);
             startActivity(intent);
             finish();
+            overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
         }
 
     }
@@ -196,4 +202,20 @@ public class LoginActivity extends AppCompatActivity implements ContractInterfac
            }
        });
     }
+    public static class Utils {
+        // 两次点击按钮之间的点击间隔不能少于1000毫秒
+        private static final int MIN_CLICK_DELAY_TIME = 1000;
+        private static long lastClickTime;
+
+        public static boolean isFastClick() {
+            boolean flag = false;
+            long curClickTime = System.currentTimeMillis();
+            if ((curClickTime - lastClickTime) >= MIN_CLICK_DELAY_TIME) {
+                flag = true;
+            }
+            lastClickTime = curClickTime;
+            return flag;
+        }
+    }
+
 }

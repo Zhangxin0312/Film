@@ -444,6 +444,7 @@ public class MovieActivity extends AppCompatActivity implements ContractInter.Mo
                intent.putExtra("id",id);
                intent.putExtra("name",result.getName());
                startActivity(intent);
+               overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
            }
        });
     }

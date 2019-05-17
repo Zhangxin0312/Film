@@ -70,6 +70,7 @@ public class MyFragment extends Fragment implements ContractInter.MyInter {
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(),UserInfoActivity.class);
                 startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
             }
         });
         //签到
@@ -87,6 +88,7 @@ public class MyFragment extends Fragment implements ContractInter.MyInter {
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(),PageListActivity.class);
                 startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
             }
         });
     }
@@ -97,6 +99,7 @@ public class MyFragment extends Fragment implements ContractInter.MyInter {
             public void onClick(View v) {
               Intent intent=new Intent(getActivity(),RecordListActivity.class);
                startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
             }
         });
     }
@@ -107,6 +110,7 @@ public class MyFragment extends Fragment implements ContractInter.MyInter {
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(),RecordFeedBackActivity.class);
                 startActivity(intent);
+                getActivity().overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
             }
         });
     }

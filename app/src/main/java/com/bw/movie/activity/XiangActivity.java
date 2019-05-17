@@ -116,6 +116,7 @@ public class XiangActivity extends AppCompatActivity  implements  ContractInter.
         Intent intent=new Intent(XiangActivity.this,MovieActivity.class);
         intent.putExtra("id",id);
         startActivity(intent);
+        overridePendingTransition(R.anim.anim_in,R.anim.anim_out);
     }
      //关注
     public void Attention(int id) {
