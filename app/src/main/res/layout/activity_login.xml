@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:background="@mipmap/login"
     android:layout_height="match_parent"
-    tools:context=".activity.LoginActivity">
+    tools:context="com.bw.movie.activity.LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -114,7 +114,7 @@
         android:layout_gravity="center"
         android:text="登录"
         android:id="@+id/btn_login"
-        android:layout_marginTop="@dimen/dp_200"
+        android:layout_marginTop="@dimen/dp_50"
         android:background="#FB7395"
         />
 
