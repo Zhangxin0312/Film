@@ -1,4 +1,4 @@
-package com.bw.movie.weiduyiyuan;
+package com.bw.movie;
 
 import org.junit.Test;
 

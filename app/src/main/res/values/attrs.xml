@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <declare-styleable name="MyView">
+=======
+    <declare-styleable name="SeatTableView">
+>>>>>>> 09131561689e4c8c2d0726b9df73c14ca2f4f677
         <attr name="seat_checked" format="reference" />
         <attr name="seat_sold" format="reference" />
         <attr name="seat_available" format="reference" />
@@ -8,4 +12,8 @@
         <attr name="overview_sold" format="color" />
         <attr name="txt_color" format="color"/>
     </declare-styleable>
+<<<<<<< HEAD
+=======
+
+>>>>>>> 09131561689e4c8c2d0726b9df73c14ca2f4f677
 </resources>

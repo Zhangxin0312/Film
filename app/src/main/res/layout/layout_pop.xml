@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_600"
+        android:id="@+id/re"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="详情"
+            android:textSize="@dimen/sp_25"
+            android:id="@+id/xiangqing_id"
+            android:layout_marginLeft="@dimen/dp_200"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评论"
+            android:textSize="@dimen/sp_25"
+            android:layout_marginLeft="@dimen/dp_350"
+            android:id="@+id/pinglu_id"
+            />
+        <!--<RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/group_id"
+            >-->
+            <!--<RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详情"
+                android:button="@null"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_20"
+                android:gravity="center"
+                android:id="@+id/rb1_id"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论"
+                android:button="@null"
+                android:layout_weight="1"
+                android:textSize="@dimen/sp_20"
+                android:gravity="center"
+                android:id="@+id/rb2_id"
+                />
+        </RadioGroup>-->
+        <ImageView
+            android:layout_width="@dimen/dp_34"
+            android:layout_height="@dimen/dp_34"
+            android:layout_marginLeft="@dimen/dp_410"
+            android:background="@mipmap/down"
+            android:id="@+id/pop_image"
+            />
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/xiangqing_id"
+            android:id="@+id/recycler_xiang"
+
+            ></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+</RelativeLayout>
