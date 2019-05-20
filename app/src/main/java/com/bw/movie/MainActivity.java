@@ -6,6 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+<<<<<<< HEAD:app/src/main/java/com/bw/movie/MainActivity.java
+import com.bw.movie.R;
+=======
+>>>>>>> f1a11dd377a52b618c0b2eb073536c998eebe520:app/src/main/java/com/bw/movie/MainActivity.java
 import com.bw.movie.activity.GuideActivity;
 
 import butterknife.BindView;
