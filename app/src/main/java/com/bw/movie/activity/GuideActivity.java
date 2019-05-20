@@ -1,4 +1,4 @@
-package com.bw.movie.activity;
+﻿package com.bw.movie.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -30,10 +30,14 @@ public class GuideActivity extends AppCompatActivity {
                 int i = viewPager.getCurrentItem();
                 //2.当前页下标++
                 i++;
-                //3.设置显示的页
+                //3.设置显示的页 aaa
                 viewPager.setCurrentItem(i);
 //                Intent intent=new Intent(GuideActivity.this,LoginActivity.class);
 //                startActivity(intent);
+  
+
+
+
 
                 //4.重新发送消息
                 handler.sendEmptyMessageDelayed(0, 1500);
