@@ -1,6 +1,6 @@
 package com.bw.movie.contract;
 
-import com.bw.movie.adapter.TicketBean;
+import com.bw.movie.bean.TicketBean;
 import com.bw.movie.bean.AssessBean;
 import com.bw.movie.bean.CinemaPageBean;
 import com.bw.movie.bean.FindBean;

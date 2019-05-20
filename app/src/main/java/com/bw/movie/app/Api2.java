@@ -24,12 +24,15 @@ public interface Api2 {
     Observable<ResponseBody>  Xiang(@Url String url, @Header("userId") int userId,@Header("sessionId")  String sessionId,@Query("movieId")  int movieId);
     @GET
     Observable<ResponseBody>  Assess(@Url String url, @Header("userId") int userId,@Header("sessionId")  String sessionId,@Query("movieId")  int movieId,@Query("page") int page,@Query("count")  int count);
+
     @FormUrlEncoded
     @POST
     Observable<ResponseBody>  AddPing(@Url String url, @Header("userId") int userId, @Header("sessionId")  String sessionId, @FieldMap HashMap<String,Object> map);
+
     @FormUrlEncoded
     @POST
     Observable<ResponseBody>  Dian(@Url String url, @Header("userId") int userId,@Header("sessionId")  String sessionId,@FieldMap HashMap<String,Object> map);
+
     @GET
     Observable<ResponseBody> Find(@Url String url,@Query("movieId") int id);
     @GET

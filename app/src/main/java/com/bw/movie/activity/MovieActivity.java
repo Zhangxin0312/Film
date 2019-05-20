@@ -25,7 +25,7 @@ import android.widget.Toast;
 
 import com.bw.movie.R;
 import com.bw.movie.adapter.AssessAdapter;
-import com.bw.movie.adapter.PersonCard;
+import com.bw.movie.bean.PersonCard;
 import com.bw.movie.adapter.StaggerAdapter;
 import com.bw.movie.bean.AssessBean;
 import com.bw.movie.bean.MovingBean;

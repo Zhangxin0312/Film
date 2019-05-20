@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.bw.movie.R;
+import com.bw.movie.bean.PersonCard;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.util.List;

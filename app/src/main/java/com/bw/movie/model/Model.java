@@ -2,7 +2,7 @@ package com.bw.movie.model;
 
 import android.util.Log;
 
-import com.bw.movie.adapter.TicketBean;
+import com.bw.movie.bean.TicketBean;
 import com.bw.movie.bean.AssessBean;
 import com.bw.movie.bean.CinemaPageBean;
 import com.bw.movie.bean.FindBean;
@@ -48,7 +48,6 @@ public class Model  implements ContractInter.ModelInter {
             public void onError(Throwable e) {
 
             }
-
             @Override
             public void onNext(ResponseBody body) {
                 try {

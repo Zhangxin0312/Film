@@ -1,4 +1,4 @@
-package com.bw.movie.adapter;
+package com.bw.movie.bean;
 
 public class TicketBean {
 

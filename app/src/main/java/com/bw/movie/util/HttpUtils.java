@@ -132,6 +132,7 @@ public class HttpUtils {
     public void getHeadPic(String url, File file, Observer<ResponseBody> observer) {
         RequestBody body = RequestBody.create(MediaType.parse("application/otect-stream"), file);
         MultipartBody.Part images = MultipartBody.Part.createFormData("image", file.getName(), body);
+
         Observable<ResponseBody> observable = retrofit.create(Api2.class).getHeadPic(url,userId,sessionId,images);
         observable.subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(observer);
     }
