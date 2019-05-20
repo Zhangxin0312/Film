@@ -27,5 +27,7 @@ public class UrlAll {
     public static String Url_gou="movieApi/movie/v1/findMovieScheduleList?";
     //查询关注影院
     public static String Url_guan="movieApi/movie/v1/verify/findMoviePageList?";
+    //点赞
+    public static String Url_zan="movieApi/cinema/v1/verify/cinemaCommentGreat?";
 
 }

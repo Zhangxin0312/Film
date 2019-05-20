@@ -9,6 +9,7 @@ import com.bw.movie.bean.PingLunBean;
 import com.bw.movie.bean.QuHeartBean;
 import com.bw.movie.bean.RecommendBean;
 import com.bw.movie.bean.XiangQingBean;
+import com.bw.movie.bean.ZanBean;
 import com.bw.movie.bean.ZhengMovieBean;
 import com.google.gson.Gson;
 
@@ -134,6 +135,13 @@ public class OkHttpUtil {
     public void getGuan(String url, int userId, String sessionId, Observer<GuanZhuBean>observer){
         Api api=retrofit.create(Api.class);
         Observable<GuanZhuBean> observable = api.getGuan(url, userId, sessionId);
+        observable.observeOn(Schedulers.io()).subscribeOn(AndroidSchedulers.mainThread()).subscribe(observer);
+    }
+
+    //电影的点赞
+    public void getZan(String url, int userId, String sessionId, Observer<ZanBean>observer){
+        Api api=retrofit.create(Api.class);
+        Observable<ZanBean> observable = api.postZan(url, userId, sessionId);
         observable.observeOn(Schedulers.io()).subscribeOn(AndroidSchedulers.mainThread()).subscribe(observer);
     }
 

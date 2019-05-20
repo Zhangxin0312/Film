@@ -13,7 +13,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
 
-import com.bw.movie.weiduyiyuan.R;
+import com.bw.movie.R;
 import com.bw.movie.activity.RecommendXiangActivity;
 import com.bw.movie.app.App;
 import com.bw.movie.bean.RecommendBean;

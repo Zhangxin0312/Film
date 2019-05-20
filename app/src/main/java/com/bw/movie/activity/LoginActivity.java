@@ -12,7 +12,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bw.movie.Entity.EncryptUtil;
-import com.bw.movie.weiduyiyuan.R;
+import com.bw.movie.R;
 import com.bw.movie.app.App;
 import com.bw.movie.bean.LoginBean;
 import com.bw.movie.contract.ContractInterface;

@@ -13,6 +13,7 @@ import com.bw.movie.bean.PingLunBean;
 import com.bw.movie.bean.RecommendBean;
 import com.bw.movie.bean.RegistBean;
 import com.bw.movie.bean.XiangQingBean;
+import com.bw.movie.bean.ZanBean;
 import com.bw.movie.bean.ZhengMovieBean;
 import com.bw.movie.util.OkHttpUtil;
 import com.google.gson.Gson;
@@ -42,7 +43,7 @@ public class MyModel {
     MyCallBack9 myCallBack9;
     MyCallBack10 myCallBack10;
     MyCallBack11 myCallBack11;
-
+    MyCallBack12 myCallBack12;
 
     public void postRequest(String phone, String pwd){
         OkHttpUtil okHttpUtil=OkHttpUtil.getInstance();
@@ -281,6 +282,26 @@ public class MyModel {
             }
         });
     }
+    //电影的点赞
+    public void getZan(int commentId){
+        OkHttpUtil okHttpUtil=OkHttpUtil.getInstance();
+        okHttpUtil.getZan(UrlAll.Url_zan + commentId, App.UserId, App.SessionId, new Observer<ZanBean>() {
+            @Override
+            public void onCompleted() {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(ZanBean zanBean) {
+                  myCallBack12.success(zanBean);
+            }
+        });
+    }
     public void setMyCallBack(MyCallBack myCallBack) {
         this.myCallBack = myCallBack;
     }
@@ -307,6 +328,10 @@ public class MyModel {
     }
     public void setMyCallBack8(MyCallBack8 myCallBack8) {
         this.myCallBack8 = myCallBack8;
+    }
+
+    public void setMyCallBack12(MyCallBack12 myCallBack12) {
+        this.myCallBack12 = myCallBack12;
     }
 
     public void setMyCallBack11(MyCallBack11 myCallBack11) {
@@ -355,6 +380,9 @@ public class MyModel {
         public void success(Object o);
     }
     public interface MyCallBack11{
+        public void success(Object o);
+    }
+    public interface MyCallBack12{
         public void success(Object o);
     }
 }

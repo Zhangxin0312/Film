@@ -159,5 +159,16 @@ public class MyPresenter<T> implements ContractInterface.PresenterInterface {
         myModel.getGuanZhu();
     }
 
+    @Override
+    public void toZan(int commentId) {
+        myModel.setMyCallBack12(new MyModel.MyCallBack12() {
+            @Override
+            public void success(Object o) {
+
+            }
+        });
+        myModel.getZan(commentId);
+    }
+
 
 }

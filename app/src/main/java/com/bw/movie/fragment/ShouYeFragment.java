@@ -8,7 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.bw.movie.weiduyiyuan.R;
+import com.bw.movie.R;
 
 /**
  * @Author：dell

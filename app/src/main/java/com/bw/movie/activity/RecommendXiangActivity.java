@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
-import com.bw.movie.weiduyiyuan.R;
+import com.bw.movie.R;
 import com.bw.movie.adapter.MyGouAdapter;
 import com.bw.movie.adapter.MyPingLunAdapter;
 import com.bw.movie.adapter.MyXiangAdapter;
@@ -25,6 +25,7 @@ import com.bw.movie.bean.GouBean;
 import com.bw.movie.bean.PingLunBean;
 import com.bw.movie.bean.RecommendBean;
 import com.bw.movie.bean.XiangQingBean;
+import com.bw.movie.bean.ZanBean;
 import com.bw.movie.bean.ZhengMovieBean;
 import com.bw.movie.contract.ContractInterface;
 import com.bw.movie.presenter.MyPresenter;
@@ -159,6 +160,8 @@ public class RecommendXiangActivity extends AppCompatActivity implements Contrac
                         recyclerView.setAdapter(adapter2);
                         presenterInterface.toPingLun(App.CinemaId,1,5);
 
+
+
                     }
                 });
 
@@ -222,5 +225,11 @@ public class RecommendXiangActivity extends AppCompatActivity implements Contrac
         GouBean gouBean= (GouBean) o;
         glist.addAll(gouBean.getResult());
         adapterg.notifyDataSetChanged();
+    }
+
+    @Override
+    public void showZan(Object o) {
+        ZanBean zanBean= (ZanBean) o;
+
     }
 }

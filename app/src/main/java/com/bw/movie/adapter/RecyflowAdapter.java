@@ -6,7 +6,7 @@ import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.bw.movie.weiduyiyuan.R;
+import com.bw.movie.R;
 import com.bw.movie.app.App;
 import com.bw.movie.bean.ZhengMovieBean;
 import com.bw.movie.contract.ContractInterface;

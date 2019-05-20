@@ -7,7 +7,7 @@ import android.os.Message;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
-import com.bw.movie.weiduyiyuan.R;
+import com.bw.movie.R;
 import com.bw.movie.adapter.MyPagerAdapter;
 
 import java.util.ArrayList;

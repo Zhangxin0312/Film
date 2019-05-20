@@ -7,7 +7,6 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.bw.movie.activity.GuideActivity;
-import com.bw.movie.weiduyiyuan.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;

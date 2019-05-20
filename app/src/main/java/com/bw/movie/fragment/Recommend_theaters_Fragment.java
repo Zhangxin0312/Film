@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.bw.movie.weiduyiyuan.R;
+import com.bw.movie.R;
 import com.bw.movie.adapter.RecommendAdapter;
 import com.bw.movie.adapter.SpacesItemDecoration;
 import com.bw.movie.bean.GuanZhuBean;

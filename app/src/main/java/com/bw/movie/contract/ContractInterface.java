@@ -40,6 +40,8 @@ public interface ContractInterface {
         public void toGouPiao(int cinemaId,int movieId);
         //关注电影的列表
         public void toGuanZhu();
+        //点赞
+        public void toZan(int commentId);
 
     }
     //推荐影院V层
@@ -60,6 +62,7 @@ public interface ContractInterface {
         public void showXiangQing(Object o);
         public void showPingLun(Object o);
         public void showGou(Object o);
+        public void showZan(Object o);
 
     }
 

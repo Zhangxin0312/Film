@@ -8,6 +8,7 @@ import com.bw.movie.bean.PingLunBean;
 import com.bw.movie.bean.QuHeartBean;
 import com.bw.movie.bean.RecommendBean;
 import com.bw.movie.bean.XiangQingBean;
+import com.bw.movie.bean.ZanBean;
 import com.bw.movie.bean.ZhengMovieBean;
 
 import java.util.HashMap;
@@ -70,4 +71,8 @@ public interface Api {
     //查询关注影院
     @GET
     public Observable<GuanZhuBean> getGuan(@Url String url,@Header("userId")int userId,@Header("sessionId")String sessionId);
+    //影院点赞
+    @POST
+    public Observable<ZanBean> postZan(@Url String url,@Header("userId")int userId,@Header("sessionId")String sessionId);
+
 }

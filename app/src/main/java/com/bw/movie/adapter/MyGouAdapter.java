@@ -8,7 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.bw.movie.weiduyiyuan.R;
+import com.bw.movie.R;
 import com.bw.movie.activity.XuanZuoActivity;
 import com.bw.movie.app.App;
 import com.bw.movie.bean.GouBean;

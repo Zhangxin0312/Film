@@ -8,7 +8,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.bw.movie.Entity.EncryptUtil;
-import com.bw.movie.weiduyiyuan.R;
+import com.bw.movie.R;
 import com.bw.movie.bean.RegistBean;
 import com.bw.movie.contract.ContractInterface;
 import com.bw.movie.presenter.MyPresenter;

@@ -1,15 +1,19 @@
 package com.bw.movie.adapter;
 
 import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.TextView;
 
-import com.bw.movie.weiduyiyuan.R;
+import com.bw.movie.R;
 import com.bw.movie.bean.PingLunBean;
 import com.facebook.drawee.view.SimpleDraweeView;
 
@@ -58,6 +62,29 @@ public class MyPingLunAdapter extends RecyclerView.Adapter<MyPingLunAdapter.Hold
         // time为转换格式后的字符串
         String time = dateFormat.format(new Date(date));
         holder.textView3.setText(time);
+
+        //点赞
+        holder.simpleDraweeView_zan.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                /*if(list.get(position).getFollowCinema()==1){
+                    myId.succ(list.get(position).getId(),list.get(position).getFollowCinema()==1);
+                    Resources resources = context.getResources();
+                    Drawable drawable = resources.getDrawable(R.mipmap.xin);
+                    holder.imageView_heart.setBackground(drawable);
+
+                }else{
+                    myId.succ(list.get(position).getId(),list.get(position).getFollowCinema()==2);
+                    Resources resources = context.getResources();
+
+                    Drawable drawable = resources.getDrawable(R.mipmap.xinx);
+                    holder.imageView_heart.setBackground(drawable);
+
+                }*/
+
+            }
+        });
+
     }
 
     @Override
@@ -69,6 +96,7 @@ public class MyPingLunAdapter extends RecyclerView.Adapter<MyPingLunAdapter.Hold
 
         SimpleDraweeView simpleDraweeView;
         TextView textView1,textView2,textView3,textView4;
+        CheckBox simpleDraweeView_zan;
         public Holder(View itemView) {
             super(itemView);
             simpleDraweeView=itemView.findViewById(R.id.p_simple);
@@ -76,6 +104,7 @@ public class MyPingLunAdapter extends RecyclerView.Adapter<MyPingLunAdapter.Hold
             textView2=itemView.findViewById(R.id.p_text2);
             textView3=itemView.findViewById(R.id.p_text3);
             textView4=itemView.findViewById(R.id.p_text4);
+            simpleDraweeView_zan=itemView.findViewById(R.id.dianzan);
         }
     }
 }
