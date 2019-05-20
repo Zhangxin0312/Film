@@ -6,8 +6,6 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
 
 import com.bw.movie.R;
 import com.bw.movie.adapter.MyPagerAdapter;
@@ -32,9 +30,6 @@ public class GuideActivity extends AppCompatActivity {
                 i++;
                 //3.设置显示的页
                 viewPager.setCurrentItem(i);
-//                Intent intent=new Intent(GuideActivity.this,LoginActivity.class);
-//                startActivity(intent);
-
                 //4.重新发送消息
                 handler.sendEmptyMessageDelayed(0, 1500);
             }
@@ -42,17 +37,6 @@ public class GuideActivity extends AppCompatActivity {
 
         ;
     };
-    @BindView(R.id.rb1)
-    RadioButton rb1;
-    @BindView(R.id.rb2)
-    RadioButton rb2;
-    @BindView(R.id.rb3)
-    RadioButton rb3;
-    @BindView(R.id.radio_group)
-    RadioGroup radioGroup;
-    @BindView(R.id.rb4)
-    RadioButton rb4;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -64,7 +48,7 @@ public class GuideActivity extends AppCompatActivity {
         list.add(R.mipmap.yo);
         list.add(R.mipmap.yt);
         //创建适配器
-        MyPagerAdapter adapter = new MyPagerAdapter(list, GuideActivity.this, handler);
+        MyPagerAdapter adapter = new MyPagerAdapter(list, GuideActivity.this);
         //设置
         viewPager.setAdapter(adapter);
         //设置监听器
@@ -75,13 +59,12 @@ public class GuideActivity extends AppCompatActivity {
                 if(list.size()-1==position){
                         Intent intent=new Intent(GuideActivity.this,LoginActivity.class);
                         startActivity(intent);
-
+                        finish();
                 }
             }
 
             @Override
             public void onPageSelected(int position) {
-                radioGroup.check(radioGroup.getChildAt(position % list.size()).getId());
 
 
             }

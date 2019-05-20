@@ -69,6 +69,7 @@ dependencies {
     //butterknife
     implementation 'com.jakewharton:butterknife:8.8.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc3'
+<<<<<<< HEAD
     //旋转木马
     implementation 'com.chenlittleping:recyclercoverflow:1.0.6'
     //瀑布流
@@ -76,4 +77,10 @@ dependencies {
     //微信
     implementation 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
     implementation files('libs/alipaySdk-20180601.jar')
+=======
+    //xbanner
+    implementation 'com.github.xiaohaibin:XBanner:1.6.1'
+    implementation 'com.chenlittleping:recyclercoverflow:1.0.6'
+
+>>>>>>> f1a11dd377a52b618c0b2eb073536c998eebe520
 }

@@ -1,4 +1,4 @@
-package com.bw.movie.weiduyiyuan;
+package com.bw.movie;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

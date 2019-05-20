@@ -1,11 +1,8 @@
 package com.bw.movie.adapter;
 
 import android.content.Context;
-import android.content.Intent;
-import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -21,12 +18,10 @@ import java.util.List;
 public class MyPagerAdapter extends PagerAdapter {
     List<Integer> list;
     Context context;
-    Handler handler;
 
-    public MyPagerAdapter(List<Integer> list, Context context, Handler handler) {
+    public MyPagerAdapter(List<Integer> list, Context context) {
         this.list = list;
         this.context = context;
-        this.handler = handler;
     }
 
     @Override
