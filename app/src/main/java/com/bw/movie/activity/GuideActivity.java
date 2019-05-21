@@ -18,7 +18,7 @@ import butterknife.ButterKnife;
 
 public class GuideActivity extends AppCompatActivity {
 
-    @BindView(R.id.view_pager)
+    @BindView(R.id.view_pager) 
     ViewPager viewPager;
     List<Integer> list = new ArrayList<>();
     Handler handler = new Handler() {
